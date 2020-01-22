@@ -39,7 +39,7 @@ Click on Create to finalize the VM.
 
 On the VM instances page, click on the instance, and then click on the SSH
 button.
-```
+
 
 ##Updating the VM and Installing PostgreSQL
 
