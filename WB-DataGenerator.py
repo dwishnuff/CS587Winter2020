@@ -10,12 +10,6 @@ import csv
 
 in_menu = True
 
-def print_options():
-    print("")
-    print("The following options are available:")
-    print("1) Generate all data.")
-    print("0) Exit\n")
-
 
 def CLI(in_menu):
     while in_menu == True:
@@ -41,5 +35,11 @@ def CLI(in_menu):
 def benchmarking_scriptwriter():
         print("Obviously, we make this do something")
 
+
+def print_options():
+    print("")
+    print("The following options are available:")
+    print("1) Generate all data.")
+    print("0) Exit\n")
 
 CLI(in_menu)
