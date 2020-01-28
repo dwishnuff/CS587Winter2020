@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WB-DataGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="124" column="3" selection-start-line="124" selection-start-column="3" selection-end-line="124" selection-end-column="3" />
+            <state relative-caret-position="325">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
               <folding>
                 <element signature="e#183#201#0" expanded="true" />
               </folding>
@@ -54,9 +54,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="982" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-5" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -65,7 +64,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -77,6 +75,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,7 +137,11 @@
       <option name="presentableId" value="Default" />
       <updated>1579820987970</updated>
       <workItem from="1579820993713" duration="4221000" />
-      <workItem from="1579842357686" duration="8574000" />
+      <workItem from="1579842357686" duration="10927000" />
+      <workItem from="1579974694064" duration="1560000" />
+      <workItem from="1579976795105" duration="447000" />
+      <workItem from="1580097625837" duration="617000" />
+      <workItem from="1580159881893" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="CLI for Wisconsin Benchmark Data Generator.">
       <created>1579823033574</created>
@@ -161,22 +164,29 @@
       <option name="project" value="LOCAL" />
       <updated>1579827017689</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Wrote numerous scripting functions.  The multi-line comment between the unique3 and print_options functions are the ones which still need to be completed.">
+      <created>1579855632418</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579855632418</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12795000" />
+    <option name="totallyTimeSpent" value="18380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="786" y="16" width="784" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2520661" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12801608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3266762" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32390383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -201,7 +211,8 @@
     <MESSAGE value="CLI for Wisconsin Benchmark Data Generator." />
     <MESSAGE value="Changes to CLI" />
     <MESSAGE value=" More changes to CLI." />
-    <option name="LAST_COMMIT_MESSAGE" value=" More changes to CLI." />
+    <MESSAGE value="Wrote numerous scripting functions.  The multi-line comment between the unique3 and print_options functions are the ones which still need to be completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote numerous scripting functions.  The multi-line comment between the unique3 and print_options functions are the ones which still need to be completed." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CS587Winter2020$WB_DataGenerator.coverage" NAME="WB-DataGenerator Coverage Results" MODIFIED="1579852157731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -209,8 +220,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/WB-DataGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="124" column="3" selection-start-line="124" selection-start-column="3" selection-end-line="124" selection-end-column="3" />
+        <state relative-caret-position="325">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
           <folding>
             <element signature="e#183#201#0" expanded="true" />
           </folding>
