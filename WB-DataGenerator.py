@@ -137,14 +137,36 @@ def unique3(rand_tuples_list, benchmark_writer):
     benchmark_writer.writerow(unique3_list)
 
 
+def even_one_percent(rand_tuples_list, benchmark_writer):
+    # evenOnePercent 0-198 random (onePercent * 2)
+    even_one_percent_list = []
+    for i in rand_tuples_list:
+        even_one_percent_list.append((i % 100) * 2)
+    benchmark_writer.writerow(even_one_percent_list)
+
+
+def odd_one_percent(rand_tuples_list, benchmark_writer):
+    #oddOnePercent 0-198 random (onePercent * 2)
+    odd_one_percent_list = []
+    for i in rand_tuples_list:
+        odd_one_percent_list.append((i % 100) * 2) + 1
+    benchmark_writer.writerow(odd_one_percent_list)
+
+def stringu1(benchmark_writer):
+    print("Foo")
+
+def stringu2(benchmark_writer):
+    print("Foo")
+
+def string4(benchmark_writer):
+    print("Foo")
+
+
 '''
-evenOnePercent 0,2,4,...,198 random (onePercent * 2)
-oddOnePercent 1,3,5,...,199 random (onePercent * 2)+1
 stringu1 - random candidate key
 stringu2 - random candidate key
 string4 - cyclic
 '''
-
 
 def print_options():
     print("")
