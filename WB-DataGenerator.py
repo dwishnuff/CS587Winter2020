@@ -152,8 +152,9 @@ def odd_one_percent(rand_tuples_list, benchmark_writer):
         odd_one_percent_list.append((i % 100) * 2) + 1
     benchmark_writer.writerow(odd_one_percent_list)
 
-def stringu1(benchmark_writer):
-    print("Foo")
+def stringu1(rand_tuples_list, benchmark_writer):
+    for i in range(len(rand_tuples_list)):
+        print("Foo")
 
 def stringu2(benchmark_writer):
     print("Foo")
