@@ -160,7 +160,7 @@ def stringu2(benchmark_writer):
     print("Foo")
 
 def string4(benchmark_writer):
-    print("Foo")
+    for i in range(len)
 
 
 '''
