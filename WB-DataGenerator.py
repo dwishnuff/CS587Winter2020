@@ -160,15 +160,13 @@ def stringu1(rand_tuples_list, benchmark_writer):
     u1 = ''
     stringu1_list = []
     for i in rand_tuples_list:
-        unique = i
+        unique = rand_tuples_list[i]
         while unique > 0:
-            while len(u1) < 7:
-              remainder = unique % 26
-
-              # 10 is the ascii value of capital A - we could have used the chr() function too.
-              u1 += chr(10+int(remainder))
-              unique = unique / 26
-    stringu1_list.append(u1.reverse() + 'x' * 45)
+            remainder = (unique % 26) + 10
+            # 10 is the ascii value of capital A - we could have used the chr() function too.
+            u1 += (('x' * 38) + chr(remainder))[::-1]
+        unique = unique / 26
+        stringu1_list.append(u1)
     benchmark_writer.writerow(stringu1_list)
 
 def stringu2(benchmark_writer):
