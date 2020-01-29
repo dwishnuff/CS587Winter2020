@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="39d34f81-1fef-4222-ba0f-acccab5df1d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WB-DataGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/WB-DataGenerator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WB-DataGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="165" column="31" lean-forward="true" selection-start-line="165" selection-start-column="31" selection-end-line="165" selection-end-column="31" />
+            <state relative-caret-position="557">
+              <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
               <folding>
                 <element signature="e#183#201#0" expanded="true" />
               </folding>
@@ -140,7 +141,9 @@
       <workItem from="1579974694064" duration="1560000" />
       <workItem from="1579976795105" duration="447000" />
       <workItem from="1580097625837" duration="617000" />
-      <workItem from="1580159881893" duration="3722000" />
+      <workItem from="1580159881893" duration="4702000" />
+      <workItem from="1580189373429" duration="600000" />
+      <workItem from="1580241789270" duration="775000" />
     </task>
     <task id="LOCAL-00001" summary="CLI for Wisconsin Benchmark Data Generator.">
       <created>1579823033574</created>
@@ -181,13 +184,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21494000" />
+    <option name="totallyTimeSpent" value="23849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12801608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13069706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -227,8 +230,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/WB-DataGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="165" column="31" lean-forward="true" selection-start-line="165" selection-start-column="31" selection-end-line="165" selection-end-column="31" />
+        <state relative-caret-position="557">
+          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
           <folding>
             <element signature="e#183#201#0" expanded="true" />
           </folding>
