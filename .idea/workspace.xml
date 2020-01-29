@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d34f81-1fef-4222-ba0f-acccab5df1d4" name="Default Changelist" comment="">
+    <list default="true" id="39d34f81-1fef-4222-ba0f-acccab5df1d4" name="Default Changelist" comment="Finished last numerical functions - stubbed the alphabetical ones.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WB-DataGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/WB-DataGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark_data.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WB-DataGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+            <state relative-caret-position="272">
+              <caret line="166" column="14" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="14" />
               <folding>
                 <element signature="e#183#201#0" expanded="true" />
               </folding>
@@ -143,7 +144,7 @@
       <workItem from="1580097625837" duration="617000" />
       <workItem from="1580159881893" duration="4702000" />
       <workItem from="1580189373429" duration="600000" />
-      <workItem from="1580241789270" duration="775000" />
+      <workItem from="1580241789270" duration="4983000" />
     </task>
     <task id="LOCAL-00001" summary="CLI for Wisconsin Benchmark Data Generator.">
       <created>1579823033574</created>
@@ -184,7 +185,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23849000" />
+    <option name="totallyTimeSpent" value="28057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -195,7 +196,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32390383" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32390383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,13 +226,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="Finished last numerical functions - stubbed the alphabetical ones." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CS587Winter2020$WB_DataGenerator.coverage" NAME="WB-DataGenerator Coverage Results" MODIFIED="1579852157731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CS587Winter2020$WB_DataGenerator.coverage" NAME="WB-DataGenerator Coverage Results" MODIFIED="1580257087812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/WB-DataGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+        <state relative-caret-position="272">
+          <caret line="166" column="14" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="14" />
           <folding>
             <element signature="e#183#201#0" expanded="true" />
           </folding>
