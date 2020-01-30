@@ -55,6 +55,9 @@ def benchmarking_scriptwriter():
         twenty_percent(rand_tuples_list, benchmark_writer)
         fifty_percent(rand_tuples_list, benchmark_writer)
         unique3(rand_tuples_list, benchmark_writer)
+        even_one_percent(rand_tuples_list, benchmark_writer)
+        odd_one_percent(rand_tuples_list, benchmark_writer)
+        stringu1(rand_tuples_list, benchmark_writer)
 
 
 def unique1(rand_tuples_list, benchmark_writer):
@@ -133,7 +136,7 @@ def fifty_percent(rand_tuples_list, benchmark_writer):
 
 def unique3(rand_tuples_list, benchmark_writer):
     # unique3 - 0 - (maxtuples - 1), described as (unique1)
-    unique3_list = rand_tuples_list
+    unique3_list = rand_tuples_list.copy()
     benchmark_writer.writerow(unique3_list)
 
 
@@ -149,19 +152,39 @@ def odd_one_percent(rand_tuples_list, benchmark_writer):
     #oddOnePercent 0-198 random (onePercent * 2)
     odd_one_percent_list = []
     for i in rand_tuples_list:
-        odd_one_percent_list.append((i % 100) * 2) + 1
+        odd_one_percent_list.append(((i % 100) * 2) + 1)
     benchmark_writer.writerow(odd_one_percent_list)
 
+
 def stringu1(rand_tuples_list, benchmark_writer):
-    for i in range(len(rand_tuples_list)):
-        print("Foo")
+    u1 = ''
+    stringu1_list = []
+    for i in rand_tuples_list:
+        unique = rand_tuples_list[i]
+        while unique > 0:
+            remainder = (unique % 26) + 10
+            # 10 is the ascii value of capital A - we could have used the chr() function too.
+            u1 += (('x' * 38) + chr(remainder))[::-1]
+        unique = unique / 26
+        stringu1_list.append(u1)
+    benchmark_writer.writerow(stringu1_list)
 
 def stringu2(benchmark_writer):
     print("Foo")
 
-def string4(benchmark_writer):
-    for i in range(len)
 
+def string4(maxtuples, benchmark_writer):
+    string4_list = []
+    for i in range(maxtuples):
+        if i % 4 == 0:
+            string4_list.append("AAAA" + ('x' * 41))
+        if i % 4 == 1:
+            string4_list.append("HHHH" + ('x' * 41))
+        if i % 4 == 2:
+            string4_list.append("OOOO" + ('x' * 41))
+        if i % 4 == 3:
+            string4_list.append("VVVV" + ('x' * 41))
+    benchmark_writer.writerow(string4_list)
 
 '''
 stringu1 - random candidate key
