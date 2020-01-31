@@ -49,7 +49,7 @@ def listwriter():
         tuples_list.append(i)
     rand_tuples_list = tuples_list.copy()
     r.shuffle(rand_tuples_list)
-    #rand_tuples_list=r.shuffle(rand_tuples_list)
+    # rand_tuples_list=r.shuffle(rand_tuples_list)
     unique1_list = rand_tuples_list.copy()
     unique2_list = unique2(tuples_list)
     two_list = two(unique1_list)
@@ -63,8 +63,13 @@ def listwriter():
     unique3_list = unique3(unique1_list)
     even_one_percent_list = even_one_percent(unique1_list)
     odd_one_percent_list = odd_one_percent(unique1_list)
-    stringu1_list = stringu1(unique1_list)
-    stringu2_list = stringu1(unique2_list)
+    stringu1_list = []
+    stringu2_list = []
+    j = 0
+    while j < len(tuples_list):
+        stringu1_list.append(stringu1(unique1_list[j]))
+        stringu2_list.append(stringu1(unique2_list[j]))
+        j += 1
     stringu4_list = string4(maxtuples)
 
     with open('benchmark_data.csv', 'w', newline='') as file:
@@ -83,7 +88,7 @@ def listwriter():
 def unique1(tuples_list):
     # unique1 - randomized tuples_list, 0 to (maxtuples - 1)
     rand_tuples_list = tuples_list.copy()
-    #unique_1 = r.shuffle(rand_tuples_list)
+    # unique_1 = r.shuffle(rand_tuples_list)
     return r.shuffle(rand_tuples_list)  # returns entire list
 
 
@@ -172,7 +177,7 @@ def even_one_percent(rand_tuples_list):
 
 
 def odd_one_percent(rand_tuples_list):
-    #oddOnePercent 0-198 random (onePercent * 2)
+    # oddOnePercent 0-198 random (onePercent * 2)
     odd_one_percent_list = []
     for i in rand_tuples_list:
         odd_one_percent_list.append(((i % 100) * 2) + 1)
@@ -181,25 +186,21 @@ def odd_one_percent(rand_tuples_list):
 
 def stringu1(rand_tuples_list):
     temp = []
-    workinglist = rand_tuples_list.copy()
-    stringu1_list = []
+    workingnumber = rand_tuples_list
 
-    for i in workinglist:
-        workingnumber = workinglist[i]
+    while workingnumber > 0:
+        convertednumber = (workingnumber % 26) + ord('A')
+        temp.append(chr(convertednumber))
+        workingnumber = int(workingnumber / 26)
 
-        while workingnumber > 0:
-            convertednumber = (workingnumber % 26) + ord('A')
-            temp.append(chr(convertednumber))
-            workingnumber = int(workingnumber / 26)
+    j = 7 - len(temp)
+    reversedtemp = temp[::-1]
+    stringify = ''
+    for element in reversedtemp:
+        stringify += element
+    result = (stringify + ('A' * j) + ('x' * 45))
 
-        j = 7 - len(temp)
-        reversedtemp = temp[::-1]
-        stringify = ''
-        for element in reversedtemp:
-            stringify += element
-        result = (stringify + ('A' * j) + ('x' * 45))
-        stringu1_list.append(result)
-    return stringu1_list
+    return result
 
 
 def string4(maxtuples):
