@@ -200,10 +200,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="added string creation functions and updated all functions to return to a variable.  Updated CSV creation to write one line per tuple." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="544" y="119" key="CommitChangelistDialog2" timestamp="1580429644323">
+    <state x="544" y="119" key="CommitChangelistDialog2" timestamp="1580429794313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="544" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580429644323" />
+    <state x="544" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580429794313" />
     <state x="184" y="92" key="MergeDialog" timestamp="1580394369128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
