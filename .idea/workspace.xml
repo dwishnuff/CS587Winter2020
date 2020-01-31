@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d34f81-1fef-4222-ba0f-acccab5df1d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WB-DataGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/WB-DataGenerator.py" afterDir="false" />
-    </list>
+    <list default="true" id="39d34f81-1fef-4222-ba0f-acccab5df1d4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580256570697</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added string creation functions and updated all functions to return to a variable.  Updated CSV creation to write one line per tuple.">
+      <created>1580429645539</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580429645539</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,13 +196,14 @@
     <MESSAGE value="Wrote numerous scripting functions.  The multi-line comment between the unique3 and print_options functions are the ones which still need to be completed." />
     <MESSAGE value="Finished last numerical functions - stubbed the alphabetical ones." />
     <MESSAGE value="Added interpreter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added interpreter." />
+    <MESSAGE value="added string creation functions and updated all functions to return to a variable.  Updated CSV creation to write one line per tuple." />
+    <option name="LAST_COMMIT_MESSAGE" value="added string creation functions and updated all functions to return to a variable.  Updated CSV creation to write one line per tuple." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="544" y="119" key="CommitChangelistDialog2" timestamp="1580256568893">
+    <state x="544" y="119" key="CommitChangelistDialog2" timestamp="1580429644323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="544" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580256568893" />
+    <state x="544" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580429644323" />
     <state x="184" y="92" key="MergeDialog" timestamp="1580394369128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -211,6 +216,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580256419691" />
+    <state x="470" y="266" key="Vcs.Push.Dialog.v2" timestamp="1580429673789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="470" y="266" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580429673789" />
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580394153325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -218,6 +227,6 @@
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580257015119" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CS587Winter2020$WB_DataGenerator.coverage" NAME="WB-DataGenerator Coverage Results" MODIFIED="1579852157731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CS587Winter2020$WB_DataGenerator.coverage" NAME="WB-DataGenerator Coverage Results" MODIFIED="1580429726447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
