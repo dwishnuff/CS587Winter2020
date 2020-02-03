@@ -7,6 +7,7 @@ Programmed Jan 2020, by Danielle Beyer and William Mass
 
 import csv
 import random as r
+import time
 
 
 def CLI(in_menu):
@@ -44,12 +45,12 @@ def listwriter():
         input(
             "Please enter an integer value for maxtuples. The Wisconsin Benchmark used 9999."
         ))
+    start_time = time.time()
     tuples_list = []
     for i in range(maxtuples):
         tuples_list.append(i)
     rand_tuples_list = tuples_list.copy()
     r.shuffle(rand_tuples_list)
-    # rand_tuples_list=r.shuffle(rand_tuples_list)
     unique1_list = rand_tuples_list.copy()
     unique2_list = unique2(tuples_list)
     two_list = two(unique1_list)
@@ -83,6 +84,8 @@ def listwriter():
                 even_one_percent_list[i], odd_one_percent_list[i],
                 stringu1_list[i], stringu2_list[i], stringu4_list[i]
             ])
+    end_time = time.time()
+    print("Data generated in %f seconds!" % (end_time - start_time))
 
 
 def unique1(tuples_list):
