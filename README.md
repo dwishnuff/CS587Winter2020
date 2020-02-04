@@ -205,19 +205,49 @@ original set of parameters.  When we get to the 'Boot Disk' section, click
 on change, and then select the snapshots tab.  This tab should have a listing
 for the snapshot we just created.
 
-#Some additional thoughts
+### Loading Data
 
-Additional Implementation options:
-We may wish to create scheduled snapshot backups, since we will (likely) be
-scraping the data at different times for the project.  I have not included
-the instructions for that in this document, but they can be found here:
-https://cloud.google.com/compute/docs/disks/scheduled-snapshots
+The WB-DataGenerator.py program in this repo will generate a number of tuples
+as specified at the command line by the user.  A number of different functions
+are run within the framework of that request, each of which creates the dataset
+for a single attribute of the scalable Wisconsin Benchmark database schema, as
+detailed on page 8 of Dewitt's paper, _Wisconsin Benchmark: Past, Present and
+Future_.  After the data is created, it will be written to a CSV file, which
+will have to be copied to the server. (We could also run the script over there,
+of course).  To copy it to the server, SSH into the server, and while in your
+home directory, click on the settings button in the SSH window.  Select 'Upload
+file' and upload it.  You can futz around with PuTTy forever trying to get things
+uploaded if you would prefer.  This is just easier.
 
-We have other options, such as installing the actual DB on a separate Persistent
-Disk, which we can discuss at our next standup.  I think this is a good idea,
-but it does make the implementation a little more complex.  Shouldn't be a big
-deal.
+The create_wb_schema.sql file contains the SQL commands to sequentially
+drop the 'wisconsinbenchmark' database if it already exists, then create the
+'wisconsinbenchmark' database with ownership by the postgres superuser, \connect
+to that database, create a table with the appropriate schema (again, as detailed
+on DeWitt), alter that table so that its owner is also the default user, and
+finally copy the CSV file into the schema.  This can all be run from within
+PostgreSQL by using the command:
+```
+\i create_wb_schema.sql
+```
+Or from the command line, using the following pair of commands:
+```
+sudo su postgres
+psql -f create_wb_schema.sql
+```
+Note that the create_wb_schema.sql script is hard coded to look for the data at
+'/home/wamass/benchmark_data.csv' so make sure to alter the script to reflect
+your /home/ directory on the Postgres server prior to attempting to run the script
+(although it will run from Will's directory - a copy of the data will be there in
+perpetuity.)
 
-### ReadMe version 0.99
-### William Mass
-### Last Updated - 1/21/20
+The current benchmark_data.csv file consists of 100000 tuples, numbered from 0 to
+99999 in unique2 (which serves as the primary key for the table).  This produces
+a table roughly five times the size of the default memory buffer (4096 Kb) deployed
+in PostgreSQL.  Some fine tuning may be required to determine if this number of
+tuples should be dialed down to about 80000 for better benchmarking purposes.  It
+was simply chosen as being a factor of 10 higher than the Scalable 'TENKTUP' table
+referenced in DeWitt.
+
+##### ReadMe version 1.2
+##### William Mass
+##### Last Updated - 2/3/20

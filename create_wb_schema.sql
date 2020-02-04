@@ -20,7 +20,10 @@ CREATE TABLE HUNDREDKTUP (
     oddOnePercent int NOT NULL,
     stringu1 varchar(52) NOT NULL,
     stringu2 varchar(52) NOT NULL,
-    string4 varchar(52) NOT NULL,
-)
+    string4 varchar(52) NOT NULL
+  );
 
-ALTER TABLE HUNDREDKTUP OWNER to postgres
+ALTER TABLE HUNDREDKTUP OWNER to postgres;
+
+COPY HUNDREDKTUP(unique1, unique2, two, four, ten, twenty, onePercent, tenPercent, twentyPercent, fiftyPercent, unique3, evenOnePercent, oddOnePercent, stringu1, stringu2, string4)
+FROM '/home/wamass/benchmark_data.csv' DELIMITER ',' HEADER CSV;
