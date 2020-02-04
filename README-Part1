@@ -1,0 +1,36 @@
+#CS587 - WINTER 2020
+### Term Project by Danielle Beyer & Will Mass
+
+##Part One Description
+For Part One of this project, we have completed the following:
+* Set-up a Google Cloud Server
+* Created a Postgres database on the server
+* Created a Python script to generate data
+	* The WB-DataGenerator.py program in this repo will generate a number of tuples as specified at the command line by the user. A number of different functions are run within the framework of that request, each of which creates the dataset for a single attribute of the scalable Wisconsin Benchmark database schema, as detailed on page 8 of Dewitt's paper, Wisconsin Benchmark: Past, Present and Future. After the data is created, it will be written to a CSV file.
+* Created a schema, table and loaded data into the database
+	* The create_wb_schema.sql file contains the SQL commands to sequentially drop the `wisconsinbenchmark` database if it already exists, then create the `wisconsinbenchmark` database with ownership by the postgres superuser, connect to that database, create a table with the appropriate schema (again, as detailed on DeWitt), alter that table so that its owner is also the default user, and finally copy the CSV file into the schema.
+
+Full detail on all of these processes is available in the general ReadMe in this repo. 
+##System Selection
+We have chosen to use PostgreSQL as our SQL implementation.  We based our decision on the comfort and expertise level of team members with PostgreSQL.
+
+##Data Load
+The current benchmark_data.csv file consists of 100000 tuples, numbered from 0 to 99999 in unique2 (which serves as the primary key for the table). This produces a table roughly five times the size of the default memory buffer (4096 Kb) deployed in PostgreSQL. Some fine tuning may be required to determine if this number of tuples should be dialed down to about 80000 for better benchmarking purposes. It was simply chosen as being a factor of 10 higher than the Scalable 'TENKTUP' table referenced in DeWitt. 
+
+This data has been loaded into our `wisconsinbenchmark` database.  A query showing ten rows of data is in this repo titled *10rowsofdata.png*.
+
+##Lessons Learned
+We initially struggled to interpret the attribute descriptions of the Wisconsin Benchmark.  After using the pseudo-code and running multiple attributes through `C` code as supplied, we were better able to understand the attribute requirements.  Our data generation code was written in `Python`, so we had a fair bit of translation to do from `C` to `Python`.
+
+In creating the string attributes, we took several attempts to interpret the description of how those specific strings were derived.  Once we understood the first, the others were straightforward. 
+
+We initially created the CSV with a section for each attribute but then re-factored our code to create one line for each tuple.  After running our data generation program to create 100,000 tuples, we decided to add a timer in order to understand how long our process ran.
+
+#####ReadMe-Part1 version 1.0
+#####Danielle Beyer (updated 2/3/2020)
+
+
+
+ 
+
+
